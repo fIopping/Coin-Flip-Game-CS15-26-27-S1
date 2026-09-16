@@ -5,12 +5,12 @@ def main():
     streak = 0
     word_choice = ("heads" or "tails")
 
-    print("Welcome!")
+    print("Welcome!\n")
     print("Heads or Tails\n")
 
     while True:
         coin = random.choice(["heads", "tails"])
-        guess = input("Guess a coin\n:")
+        guess = input("Guess a coin:")
         if guess != word_choice:
             print("Wrong!")
         if coin == guess:
